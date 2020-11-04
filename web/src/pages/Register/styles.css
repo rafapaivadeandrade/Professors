@@ -1,0 +1,234 @@
+#page-register{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:1fr 1fr 2fr;
+    grid-template-areas: 
+    "register empty container"
+    "register empty container"
+    ;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+    overflow: hidden;
+}
+#logo-container1{
+    grid-area: container;
+    background-image: url('../../assets/images/success-background.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 280px;
+    right: 100%;
+    height: 400px;
+    width: 800px;
+    transform: rotate(90deg);
+}
+
+#logo-container1 div{
+    transform: rotate(-90deg)
+}
+#empty-container{
+    display: flex;
+    background-color: var(--color-background);
+    grid-area: empty;
+}
+
+#register{
+    display: flex;
+    background-color: var(--color-background);
+    grid-area: register;
+    align-items: center;
+}
+#register a img{
+    position: absolute;
+    background-color: var(--color-background);
+    transition: opacity 0.2s;
+    top: 20px;
+    left: 200px;
+}
+#register h1{
+    color: var(--color-text-title);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    width: 198px;
+    height: 36px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+
+}
+#register p{
+    color: var(--color-text-title);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    width: 198px;
+    height: 36px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+   
+}
+::placeholder{
+    color: var(--color-text-complement);
+
+}
+
+
+#register  input[name="lastName"]{
+    width: 352px;
+    height: 6.6rem;
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    outline: 0;
+    margin-left: 200px;
+    padding: 0 1.6rem;
+}
+#register  input[name="lastName"]:focus{
+    /* color: var(--color-primary-light); */
+    border-color: var(--color-primary-light);
+}
+#register  span#register-email-error{
+    width: 200px;
+    height: 6.6rem;
+    color: #c53030;
+    outline: 0;
+    padding-left:200px;
+}
+#register  span#register-password-error{
+    position: relative;
+    width: 200px;
+    color: #c53030;
+    outline: 0;
+    padding-left:200px;
+    margin-top: 20px;
+    top: 20px;
+}
+/* #register input[name="lastname"]:focus ~ #focus-border:before
+{
+    top: 57.6%;
+    position: absolute;
+    left: 17.8rem;
+
+    width: 2.2%;
+    transition: 0.8s;
+} */
+#register  input[name="name"]{
+    width: 352px;
+    height: 6.6rem;
+    border: 2px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    outline: 0;
+    margin-left: 200px;
+    padding: 0 1.6rem;
+}
+#register  input[name="name"]:focus{
+    /* color: var(--color-primary-light);   */
+    border-color: var(--color-primary-light);
+}
+/* #register  input[name="name"]:focus ~ #focus-border:before
+{
+    top: 51%;
+    left: 17.8rem;
+    width: 2.2%;
+    transition: 0.8s;
+} */
+#register  input[name="email"]:focus{
+    /* color: var(--color-primary-light); */
+    border-color: var(--color-primary-light);
+}
+#register  input[name="email"]{
+    width: 352px;
+    height: 6.6rem;
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    outline: 0;
+    margin-left: 200px;
+    padding: 0 1.6rem;
+}
+/* #register input[name="email"]:focus ~ #focus-border:before
+{
+    top: 70%;
+    left: 17.8rem;
+    width: 2.2%;
+
+    transition: 0.8s;
+}
+#register input[name="password"]:focus ~ #focus-border:before
+{
+    top: 70%;
+    left: 17.8rem;
+    width: 2.2%;
+
+    transition: 0.8s;
+} */
+#register input[name="password"]{
+    position: absolute;
+    width: 352px;
+    height: 6.6rem;
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    outline: 0;
+    padding: 0 1.6rem;
+}
+#register  input[name="password"]:focus{
+    /* color: var(--color-primary-light); */
+    border-color: var(--color-primary-light);
+}
+#register div #password-container{
+    display: flex;
+    direction: column;
+    align-items: center;
+    margin-left: 200px;
+    border-radius: 0.8rem;
+    margin-top: 22px;
+    }
+
+
+
+#register div #password-container button#eye{
+    position: relative;
+    /* align-items: center; */
+    /* margin-top: 10px; */
+    /* justify-content: center; */
+    margin-left:320px;
+    border: 0;
+    background: transparent ;
+    outline: none;
+    width: 0;
+}
+
+
+#register div a:first-child{
+    color: var(--color-text-complement);
+    font-size: 15px;
+    margin-left: 270px;
+    padding-right: 55px;
+}
+#register div a{
+    font-size: 15px;
+    color: var(--color-text-complement);
+}
+#register div button[type=button]{
+    color: var(--color-text-complement);
+    background-color: #DCDCE6;
+    outline: none;
+    border: 0;
+    border-radius: 0.8rem ;
+    padding: 15px 0px;
+    margin-left: 200px;
+    margin-top: 40px;
+    width: 64%;
+    }
+#register div button[type=button]:hover{
+    color: var(--color-title-in-primary );
+    background-color: var(--color-secundary);
+    outline: none;
+    border: 0;
+    border-radius: 0.8rem ;
+    padding: 15px 0px;
+    margin-left: 200px;
+    margin-top: 40px;
+    transition: 0.8s;
+    }

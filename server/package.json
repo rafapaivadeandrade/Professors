@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "knexfile.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "celebrate": "^13.0.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.2",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.11",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon --experimental-modules src/server.js",
+    "knex:migrate": "knex --knexfile knexfile.js migrate:latest",
+    "knex:migrate:rollback": "knex --knexfile knexfile.js migrate:rollback"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

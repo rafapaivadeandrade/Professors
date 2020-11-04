@@ -1,0 +1,58 @@
+.profileDropzone {
+  height: 150px;
+  width: 150px;
+  padding-right: 20px;
+ /* background: var(--color-button-text); */
+  /* border: 1px solid var(--color-line-in-white); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -48px;
+  outline: 0;
+  margin-left: 295px;
+  margin-bottom: 40px;
+  border-top-left-radius: 170px;
+  border-top-right-radius: 170px;
+  border-bottom-left-radius: 170px;
+  border-bottom-right-radius: 170px;
+   /* background-image: url('../../assets/images/success-background.svg');
+   background-repeat: no-repeat;
+   background-size: 10% 10%;
+  width: 100px;
+  height: 100px; */
+}
+
+.profileDropzone img {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  right: 135px;
+  top: 15px;
+  margin-bottom: 40px;
+  border-top-left-radius: 170px;
+  border-top-right-radius: 170px;
+  border-bottom-left-radius: 170px;
+  border-bottom-right-radius: 170px;
+  object-fit: cover;
+}
+.profileDropzone p {
+  padding-top: 60px; 
+  padding-bottom: 60px;
+  padding-right:60px;
+  padding-left: 60px;
+  margin-left: 20px; 
+  margin-bottom: 20px;
+  border: 1px dashed #ddd;
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  border-bottom-left-radius: 140px;
+  border-bottom-right-radius: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileDropzone p svg {
+  color: #ddd;
+}

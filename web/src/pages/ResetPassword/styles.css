@@ -1,0 +1,160 @@
+#page-reset-password{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+#page-container{
+    background-image: url('../../assets/images/success-background.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 80vh;
+    width: 100vw;
+
+}
+#page-container div a{
+    color: var(--color-text-complement);
+    background-color: #DCDCE6;
+    outline: none;
+    border: 0;
+    border-radius: 0.8rem ;
+    padding: 15px 115px;
+    text-decoration: none;
+    margin-top: 10px;
+
+    }
+#page-container div a:hover{
+    color: var(--color-title-in-primary );
+    background-color: var(--color-secundary);
+    outline: none;
+    border: 0;
+    border-radius: 0.8rem ;
+    padding: 15px 115px;
+    transition: 0.8s;
+    }
+    #page-container div h1{
+        color: var(--color-background);
+        font-size: 70px;
+        font-family: "Poppins";
+
+    }
+    #page-container div {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top: 120px;
+        gap: 5px;
+    }
+    #page-container input[name="password"] {
+        /* position: absolute; */
+        outline: 0;
+        border-radius: 0.8rem;
+        padding: 0 1.6rem;
+        width: 352px;
+        height: 6.6rem;
+        border: 1px solid var(--color-line-in-white);
+        left: 100px;
+        /* top: 370px;  */
+    }
+    #page-container input[name="password"]~ #focus-border-password:before {
+        content: "";
+        position: absolute;
+        left: 41.7%;
+        width: 0;
+        height: 2px;
+        background: var(--color-primary-light);
+        transform: rotate(90deg);
+        z-index: 1;
+        top: 38.7%;
+
+    }
+    #page-container input[name="password"]:focus ~ #focus-border-password:before {
+        top: 38%;
+        position: absolute;
+        left: 40.8%;
+        transition: 0.8s;
+        width: 2%;
+    }
+    #page-container input[name="password"]~ #focus-border-password-error:before {
+        content: "";
+        position: absolute;
+        left: 41.8%;
+        width: 0;
+        height: 2px;
+        background: var(--color-primary-light);
+        transform: rotate(90deg);
+        z-index: 1;
+        top: 42.7%;
+    }
+    #page-container input[name="password"]:focus ~ #focus-border-password-error:before {
+        top: 43%;
+        position: absolute;
+        left: 40.8%;
+        transition: 0.8s;
+        width: 2%;
+        bottom: 20px;
+        height: 2px;
+    }
+    #page-container input[name="email"] {
+        outline: 0;
+        border-radius: 0.8rem;
+        padding: 0 1.6rem;
+        width: 352px;
+        height: 6.6rem;
+        border: 1px solid var(--color-line-in-white);
+    }
+    #page-container input[name="email"]~ #focus-border-email:before {
+        content: "";
+        position: absolute;
+        left: 41.8%;
+        width: 0;
+        height: 2px;
+        background: var(--color-primary-light);
+        transform: rotate(90deg);
+        z-index: 1;
+        top: 30.7%;
+    }
+    #page-container input[name="email"]~ #focus-border-email-error:before {
+        content: "";
+        position: absolute;
+        left: 41.8%;
+        width: 0;
+        height: 2px;
+        background: var(--color-primary-light);
+        transform: rotate(90deg);
+        z-index: 1;
+        top: 30.7%;
+    }
+    #page-container input[name="email"]:focus ~ #focus-border-email:before {
+        top: 30.7%;
+        position: absolute;
+        left: 40.8%;
+        transition: 0.8s;
+        width: 2%;
+        bottom: 20px;
+        height: 2px;
+    }
+    #page-container input[name="email"]:focus ~ #focus-border-email-error:before {
+        top: 33%;
+        position: absolute;
+        left: 40.8%;
+        transition: 0.8s;
+        width: 2%;
+        bottom: 20px;
+        height: 2px;
+    }
+    #page-container  span#reset-email-error{
+        position: relative;
+        right: 90px;
+        color: #c53030;
+    }    
+    #page-container  span#reset-password-error{
+        position: relative;
+        right: 80px;
+        color: #c53030;
+    }    
+ 
