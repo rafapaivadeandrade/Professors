@@ -203,7 +203,7 @@ First start the application backend.
 
   
 
-1. `cd backend`
+1. `cd server`
 
 2. `yarn` or `npm install`
 
